@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: cursive, sans-serif;
+}
+
+.navber {
+    background-color: #496989;
+    color: #fff;
+    padding: 2.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.navber h2 {
+    font-size: 2.8rem;
+}
+
+
+
+.cart {
+    background-color: #fff;
+    color: #212529;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -18px;
+    right: -23px;
+    background-color: rgb(100, 199, 0);
+    font-size: 2.4rem;
+    padding: 0 1rem;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.shop {
+    gap: 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.item {
+    background: #fff;
+    box-shadow: .5rem .5rem  #212529;
+    border-radius:  1.2rem;
+    overflow: hidden;
+    padding: 2rem;
+    border: .1rem solid #212529;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+.stars {
+    display: flex;
+    list-style: none;
+    gap: .3rem;
+    font-size: 1.8rem;
+    margin-top: 6rem ;
+    position: relative;
+}
+
+.stars::before {
+    content: 'NEW';
+    position: absolute;
+    top: -5rem;
+    left: 0rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #EE4266;
+    color: #fff;
+    padding: .7rem 1.3rem;
+    border-radius: 1rem;
+}
+
+.bold--text {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: .6rem;
+}
+
+.float-right {
+    margin-left: auto;
+    color: #888
+}
+
+.name-project {
+    font-size: 2rem;
+    margin-top: 1.4rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.info-project {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    color: #888;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem
+}
+
+#minus {
+    color: red;
+}
+
+#plus {
+    color: green;
+}
+
+.color-star {
+    color:gold;
+    text-shadow: .1rem .1rem .3rem black;
+}
+
+
+/* .stars {
+
+} */

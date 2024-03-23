@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: cursive, sans-serif;
+    color:#20273b
+}
+
+.content {
+    display: flex;
+    gap: 25rem;
+    max-width: 130rem;
+    margin: 13rem auto;
+}
+
+/* .left {
+} */
+
+.item--card img {
+    width: 15%;
+}
+
+.total {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+    color: #283149;
+}
+
+.item--card {
+    /* width: 0%; */
+    display: flex;
+    align-items: center;
+    box-shadow: 0rem .4rem .5rem rgba(0,0,0,0.5);
+    padding: 1rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name--times,
+.prise--each {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.prise--each {
+    padding-left: 13rem;
+}
+
+.time--name,
+.prise {
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.each {
+    color:#888;
+    font-size: 1.6rem;
+}
+
+/*    right    */
+.card--pay div {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.card--pay label {
+    position: absolute;
+    font-size: 1.8rem;
+    top: -2.4rem;
+    color: #666;
+}
+
+.card--pay input,
+select {
+    padding: 1rem 27rem 1rem 1rem;
+    border: none;
+    border: 1px solid #c5c4c4;
+    box-shadow: .1rem .2rem .4rem #999;
+    border-radius: .4rem;
+}
+
+.card--pay input::placeholder {
+    font-size: 1.6rem;
+    color: #888;
+}
+
+.card--info div input,
+.address .hlaf{
+    padding: 1rem 4.6rem 1rem 1rem;
+}
+
+.input--visa {
+    position: relative;
+}
+
+.visa {
+    position: absolute;
+    z-index: 1;
+    font-size: 3.2rem;
+    left: 43%;
+    top: .3rem;
+    color: blue;
+} 
+
+.visa1 {
+    /* top: 0; */
+    left: 44.5%;
+}
+
+.visa2 {
+    left: 35.8%;
+}
+
+.visa3 {
+    left: 40.2%;
+}
+
+select  {
+    display: block;
+    padding: 1rem 36.6rem 1rem 1rem;
+    font-size: 1.6rem;
+}
+
+.fall {
+    display: block;
+}
+
+.btn--pay {
+    border: none;
+    background: none;
+    width: 100%;
+    background: rgb(24, 76, 247);
+    padding: 1.8rem 0rem;
+    border-radius: 1.2rem;
+    color: #e7e7e7;
+    cursor: pointer;
+}

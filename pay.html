@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-cary-pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navber">
+        <h2>Clothing Store</h2>
+        <div class="cart">
+            <a href="pay.html"><i class="bi bi-cart"></i></a>
+            <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+    </div>
+    <div class="content">
+    <div class="left">
+        <p class="total">rial 20.332</p>
+        <div class="items">
+            <div class="item--card">
+                <img src="./images/headphones.jpg" alt="">
+                <div class="name--times">
+                    <p class="time--name">name of items</p>
+                    <p class="times">Only 4</p>
+                </div>
+                <div class="prise--each">
+                    <p class="prise">Ro 300</p>
+                    <p class="each">50 each</p>
+                </div>
+            </div>
+            <div class="item--card">
+                <img src="./images/headphones.jpg" alt="">
+                <div class="name--times">
+                    <p class="time--name">name of items</p>
+                    <p class="times">Only 4</p>
+                </div>
+                <div class="prise--each">
+                    <p class="prise">Ro 300</p>
+                    <p class="each">50 each</p>
+                </div>
+            </div>
+        </div>
+        <div class="content--but">
+            <button>in</button>
+            <button>out</button>
+        </div>
+    </div>
+        <div class="card--pay right">
+            <div class="content--email">
+                <label for="">Email</label>
+                <input type="text">
+            </div>
+            <div class="card--info">
+                <i class=" visa visa1 fa-brands fa-cc-visa" style="color: red;"></i>
+                <i class=" visa visa2 fa-brands fa-cc-paypal" style="color: #1f80ff;"></i>
+                <i class="visa visa3 fa-brands fa-cc-apple-pay" style="color: black;"></i>
+
+                <label for="">Card information</label>
+                <input class="input--visa" placeholder="1234 1234 1234 1234" type="number">
+                <div >
+                    <input placeholder="MM / YY" type="number">
+                    <input placeholder="CVC" type="number">
+                    <i class=" visa fa-regular fa-credit-card"></i>
+                </div>
+            </div>
+            <div class="Name--on--card">
+                <label for="">Name on card</label>
+                <input type="text">
+            </div>
+            <div class="address">
+                <select name="" id="">
+                    <option value="">Oman</option>
+                    <option value="">Indin</option>
+                    <option value="">USA</option>
+                </select>
+                <input class="fall" placeholder="Address line 1" type="text">
+                <input class="hlaf" placeholder="ZIP CODE" type="text">
+                <input class="hlaf" placeholder="City" type="text">
+            </div>
+            <div>
+                <button class="btn btn--pay">Pay</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="Data.js"></script>
+<script src="card.js"></script>
+</body>
+</html>
