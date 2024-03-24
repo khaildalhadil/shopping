@@ -73,6 +73,7 @@ const increment = (id) => {
     generateCartItems()
     update(id)
     localStorage.setItem('data', JSON.stringify(basket))
+    totalAmount()
 };
 
 const decrement = (id) => {
@@ -89,6 +90,7 @@ const decrement = (id) => {
     basket = basket.filter((x) => x.item != 0 );
     generateCartItems()
     localStorage.setItem('data', JSON.stringify(basket))
+    totalAmount()
 };
 
 const update = (id) => {
@@ -96,6 +98,7 @@ const update = (id) => {
     // console.log(search.item)
     document.getElementById(id).innerHTML = search.item
     calculation()
+    totalAmount()
 };
 
 let removeItem = (id) => {
@@ -103,11 +106,34 @@ let removeItem = (id) => {
     console.log(selectedItem)
     basket = basket.filter((x) => x.id !== selectedItem)
     generateCartItems()
+    totalAmount()
     localStorage.setItem('data', JSON.stringify(basket))
+    calculation()
+}
+
+let clearCart = () => {
+    basket = [];
+    generateCartItems();
+    localStorage.setItem('data', JSON.stringify(basket))
+    calculation()
 }
 
 let totalAmount = () => {
     if (basket.length != 0) {
-        
+        let amount = basket.map((x) => {
+            let {item, id} = x;
+            let search = shopItemsData.find((y) => y.id == id) || [];
+            return item * search.price;
+        }).reduce((x, y) => x + y, 0);
+        total.innerHTML = `
+            <p>Total Bill ${amount}</p>
+            <div class="content--but">
+                <button>in</button>
+                <button onclick="clearCart()">out</button>
+            </div>
+        `
     }
+    else return
 }
+
+totalAmount()
